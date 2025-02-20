@@ -4851,7 +4851,7 @@ int set_postexec( struct submit *s, char *key, SV* value ){
     return -1;
   }
   s->postExecCmd = (char *)SvPV(value, len);
-  s->options3 |= SUB_PRE_EXEC;
+  s->options3 |= SUB3_POST_EXEC;
   return 0;
 }
 
